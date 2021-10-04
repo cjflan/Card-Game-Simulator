@@ -22,9 +22,9 @@ public class BuildScript : MonoBehaviour
     [MenuItem("Build/Build OSX")]
     public static void PreformBuild()
     {
-        string[] scenes = { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckExplored.unity", "Assets/Scenes/MainMenu.unity", "Assets/Scenes/PlayGame.unity", "Assets/Scenes/Settings.unity", "Assets/Scenes/TitleScreen.unity" };
+        // string[] scenes = { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckExplored.unity", "Assets/Scenes/MainMenu.unity", "Assets/Scenes/PlayGame.unity", "Assets/Scenes/Settings.unity", "Assets/Scenes/TitleScreen.unity" };
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        buildPlayerOptions.scenes = scenes;
+        buildPlayerOptions.scenes = new[] { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckExplored.unity", "Assets/Scenes/MainMenu.unity", "Assets/Scenes/PlayGame.unity", "Assets/Scenes/Settings.unity", "Assets/Scenes/TitleScreen.unity" };
         buildPlayerOptions.locationPathName = "OSXbuild";
         buildPlayerOptions.target = BuildTarget.StandaloneOSX;
         buildPlayerOptions.options = BuildOptions.None;
