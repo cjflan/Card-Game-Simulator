@@ -25,7 +25,7 @@ public class BuildScript : MonoBehaviour
         string[] scenes = { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckExplored.unity", "Assets/Scenes/MainMenu.unity", "Assets/Scenes/PlayGame.unity", "Assets/Scenes/Settings.unity", "Assets/Scenes/TitleScreen.unity" };
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = scenes;
-        buildPlayerOptions.locationPathName = "../../../OSXbuild";
+        buildPlayerOptions.locationPathName = "OSXbuild";
         buildPlayerOptions.target = BuildTarget.StandaloneOSX;
         buildPlayerOptions.options = BuildOptions.None;
 
