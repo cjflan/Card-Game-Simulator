@@ -1,4 +1,3 @@
-
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Build.Reporting;
@@ -11,7 +10,7 @@ public class BuildScript : MonoBehaviour
     public static void PreformBuild()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        buildPlayerOptions.scenes = new[] { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckEditor.unity", "Assets/Scenes/MainMenu.unity", 
+        buildPlayerOptions.scenes = new[] { "Assets/Scenes/CardsExplorer.unity", "Assets/Scenes/DeckEditor.unity", "Assets/Scenes/MainMenu.unity",
             "Assets/Scenes/PlayGame.unity", "Assets/Scenes/Settings.unity", "Assets/Scenes/TitleScreen.unity" };
         buildPlayerOptions.locationPathName = "OSXbuild";
         buildPlayerOptions.target = BuildTarget.StandaloneOSX;
